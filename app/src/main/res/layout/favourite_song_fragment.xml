@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kushagra.com.paginationwithretrofiturlparsing.MainActivity">
+    <!--<jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/main_swipe">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_songs_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_recycler"
+            android:layout_gravity="center"/>
+        <include layout="@layout/error_layout"
+            />
+    </FrameLayout>
+    <!--</jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>-->
+
+</LinearLayout>

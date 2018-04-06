@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:orientation="horizontal"
+android:background="#CC000000"
+android:paddingRight="8dp"
+android:layout_height="70dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circularImage"
+    android:layout_width="66dp"
+    android:layout_height="66dp"
+    android:src="@drawable/music_icon"
+    app:civ_border_width="2dp"
+    app:civ_border_color="#FF000000"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_toRightOf="@+id/circularImage"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <ImageButton android:id="@id/exo_play"
+        android:tint="#FF00A6FF"
+
+        style="@style/ExoMediaButton.Play"/>
+
+    <ImageButton android:id="@id/exo_pause"
+        android:tint="#FF00A6FF"
+        style="@style/ExoMediaButton.Pause"/>
+    <TextView android:id="@id/exo_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:includeFontPadding="false"
+        android:textColor="#FF00A6FF"/>
+
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id="@id/exo_progress"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="26dp"/>
+
+    <TextView android:id="@id/exo_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:includeFontPadding="false"
+        android:textColor="#FF00A6FF"/>
+
+</LinearLayout>
+
+</RelativeLayout>
