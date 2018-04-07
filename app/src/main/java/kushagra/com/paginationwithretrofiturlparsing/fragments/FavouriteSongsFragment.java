@@ -1,6 +1,7 @@
 package kushagra.com.paginationwithretrofiturlparsing.fragments;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -56,7 +58,7 @@ import static kushagra.com.paginationwithretrofiturlparsing.Utils.Constants.TABL
         private SongsPaginationDataAdapter mAdapter;
         private LinearLayoutManager mLayoutManager;
         // to keep track which pages loaded and next pages to load
-        public static int pageNumber;
+        private  int pageNumber;
         private Context context;
         private List<OlaData> songsList;
         ProgressBar progressBar;
@@ -206,6 +208,7 @@ mAdapter.setCallbackListener(this);
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
             // Refresh your fragment here
+            pageNumber=1;
             getFragmentManager().beginTransaction().detach(this).attach(this).commit();
         }
     }
@@ -352,6 +355,13 @@ mAdapter.setCallbackListener(this);
         private void search(final SearchView searchView) {
             searchView.setQueryHint("Search Favourite Song");
 
+            EditText searchText=((EditText)searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text));
+
+            searchText.setHintTextColor(getResources().getColor(R.color.black_overlay));
+            Typeface kushagra = Typeface.createFromAsset(context.getAssets(), "fonts/angelina.TTF");
+
+            searchText.setTypeface(kushagra);
+            searchText.setTextSize(28);
 
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
