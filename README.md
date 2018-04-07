@@ -45,3 +45,21 @@ Develop a pseudo Mobile application(Android/iOS) which should list and play best
 — Implement song download functionality to device. They can either stream it or download.
 
 — Maintain Past activity history by user like streaming and download with song and metadata and store everything in local database, e.g Sqlite etc. Provide another tab on home screen to view activity history.
+
+This app has been tested on Redmi 3s prime API 23.
+<br>
+Screenshots
+ <p align = 'center'>
+ <img  width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-36-13-142_kushagra.com.paginationwithretrofiturlparsing.png' />
+  <img width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-36-52-752_kushagra.com.paginationwithretrofiturlparsing.png'/>
+     <img  width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-38-12-374_kushagra.com.paginationwithretrofiturlparsing.png' />
+  <img width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-38-56-175_kushagra.com.paginationwithretrofiturlparsing.png'/>
+     <img  width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-39-12-444_android.png' />
+  <img width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/PaginationWithRetrofitUrlParsing/blob/master/Screenshots/Screenshot_2018-04-07-12-53-46-784_kushagra.com.paginationwithretrofiturlparsing.png'/>
+  
+ </p>
+ <br>
+See Demo Video <a href = ''>here </a>
+<br>
+Download Demo Version <a href = ''>here </a>
+
